@@ -17,3 +17,4 @@
 
 + Run ``npm install gulp-livereload@3.8.1 --save-dev`` to install it
 + Install chrome livereload plugin or add a script to your html
++ You need to call livereload everytime you save final files to destination
