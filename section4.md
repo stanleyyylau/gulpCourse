@@ -21,11 +21,12 @@
 + than you have to restart gulp watch
 + the solution will be a plugin called plumber
 + plumber should be right after you load the css files
++ this.emit('end') is a gulp buit-in function, it tells gulp to stop running the code below without braking gulp
 
 
 ## Adding Source maps
 + install gulp-sourcemaps@1.6.0
-+ after you check the css files and right before you output them to destination folder
++ after you plumber check the css files and right before you output them to destination folder
 + soucemaps.init() and sourcemaps.write()
 
 
@@ -33,3 +34,10 @@
 
 + install gulp-sass@2.1.1
 + use sass() right after autoprefixer
+
+
+## Less with gulp
++ Install less and less plugin called autoprefixer
++ After loading, you need to create an instance of less object
++ Unlike sass, less does not handle css minification in a plugin
++ You need to call that gulp plugin right after you less
